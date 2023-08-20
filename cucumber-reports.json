@@ -1,0 +1,84 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-20T16:31:22.456Z",
+        "line": 11,
+        "name": "Verify Google Search for \"Testing\"",
+        "description": "",
+        "id": "google-search-|-steps;verify-google-search-for-\"testing\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25389706800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the Google homepage",
+            "match": {
+              "location": "Stepsdef.Steps.iAmOnGoogleHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 125666900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter \"Testing\" into the search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testing\"",
+                  "offset": 8
+                }
+              ],
+              "location": "Stepsdef.Steps.iEnterSearchText(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5203117900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the search button",
+            "match": {
+              "location": "Stepsdef.Steps.iClickSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10818296200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see search results containing \"Testing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testing\"",
+                  "offset": 39
+                }
+              ],
+              "location": "Stepsdef.Steps.iSeeSearchResults(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google Search | Steps",
+    "description": "",
+    "id": "google-search-|-steps",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Search.feature",
+    "tags": []
+  }
+]
